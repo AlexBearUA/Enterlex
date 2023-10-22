@@ -1,0 +1,37 @@
+.soc-networks {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  &__item {
+    list-style-type: none;
+  }
+
+  &__link {
+    @include centeredFlex();
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: #afb1b8;
+
+    transition: color var(--time-transition) var(--time-func),
+      background-color var(--time-transition) var(--time-func);
+
+    &--dark-theme {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #ffffff;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: #2196f3;
+      color: #ffffff;
+    }
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+}

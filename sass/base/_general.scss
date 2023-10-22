@@ -1,0 +1,56 @@
+body {
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @include for-phone {
+    width: 480px;
+  }
+
+  @include for-tablet {
+    width: 768px;
+  }
+
+  @include for-desktop {
+    width: 1200px;
+  }
+}
+
+.section {
+  padding: 60px 0;
+  @include for-desktop {
+    padding: 94px 0;
+  }
+}

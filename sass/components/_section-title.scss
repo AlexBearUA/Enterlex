@@ -1,0 +1,14 @@
+.section-title {
+  margin-bottom: 30px;
+  @include for-desktop {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+
+  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
