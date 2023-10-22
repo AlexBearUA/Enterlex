@@ -22,45 +22,4 @@
   }
 }
 
-@mixin main-button() {
-  display: flex;
-  border: 0;
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  background-color: var(--accent-color);
-  color: var(--main-background-color);
-  cursor: pointer;
 
-  transition: background-color var(--time-transition) var(--time-func),
-    box-shadow var(--time-transition) var(--time-func);
-
-  &:hover,
-  &:focus {
-    background-color: #188ce8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
-}
-
-@mixin mobile-button() {
-  @include centeredFlex();
-
-  min-width: 40px;
-  min-height: 40px;
-
-  background-color: transparent;
-  color: var(--title-text-color);
-  cursor: pointer;
-  border: none;
-
-  @include for-tablet {
-    display: none;
-  }
-
-  &:focus,
-  &:hover {
-    color: var(--accent-color);
-  }
-}
