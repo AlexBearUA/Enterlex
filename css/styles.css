@@ -1,25 +1,10 @@
-/* Color variables */
-
-:root {
-  --main-background-color: #ffffff;
-  --secondary-background-color: #2f303a;
-  --accent-color: #2196f3;
-  --section-background-color: #f5f4fa;
-  --our-contacts-color: rgba(255, 255, 255, 0.6);
-  --main-text-color: #757575;
-  --title-text-color: #212121;
-  --logo-end-color: #000000;
-  --time-func: cubic-bezier(0.4, 0, 0.2, 1);
-  --time: 250ms;
-}
-
 /* General styles */
 
 body {
-  background-color: var(--main-background-color);
+  /* background-color: var(--main-background-color);
   color: var(--main-text-color);
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+  font-size: 14px; */
 }
 
 h1,
@@ -68,14 +53,14 @@ img {
 }
 
 .section-title {
-  margin-bottom: 50px;
+  /* margin-bottom: 50px;
 
   text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: var(--title-text-color);
+  color: var(--title-text-color); */
 }
 
 /* Logo styles */
