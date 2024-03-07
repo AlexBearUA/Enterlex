@@ -36,7 +36,7 @@ img {
 .section-header {
   width: 200px;
   margin: 0 auto 50px auto;
-  color: #125388;
+  color: #004aad;
   text-align: center;
 }
 
@@ -177,26 +177,40 @@ img {
 }
 
 .service-header {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .consultation {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .consultation-item {
   width: 525px;
+  border: 1px solid #125388;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 0px 1px 1px rgba(18, 83, 136, 0.12), 0px 4px 4px rgba(18, 83, 136, 0.06),
+    1px 4px 6px rgba(18, 83, 136, 0.16);
 }
 
-.consultation-header {
+.service-subheader {
   text-align: center;
-  margin-bottom: 10px;
+  padding: 15px;
+  background-color: #125388;
+  color: white;
+  width: 100%;
+}
+
+.service-subheader-position {
+  position: absolute;
 }
 
 .consultation-text {
-  text-align: left;
+  padding: 15px;
+  text-align: justify;
 }
 
 .ask-consult {
@@ -213,4 +227,54 @@ img {
 .ask-consult:hover {
   color: #ca6d2e;
   background-color: #125388;
+}
+
+.individual-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 25px;
+  justify-content: space-between;
+}
+
+.individual-item {
+  position: relative;
+  width: 30%;
+  border: 1px solid #125388;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 0px 1px 1px rgba(18, 83, 136, 0.12), 0px 4px 4px rgba(18, 83, 136, 0.06),
+    1px 4px 6px rgba(18, 83, 136, 0.16);
+}
+
+/* .individual-item:last-child {
+  margin: 0 auto;
+} */
+
+.individual-text {
+  padding: 10px;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.firms-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 30px;
+}
+
+.firms-item {
+  position: relative;
+  width: 525px;
+  border: 1px solid #125388;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 0px 1px 1px rgba(18, 83, 136, 0.12), 0px 4px 4px rgba(18, 83, 136, 0.06),
+    1px 4px 6px rgba(18, 83, 136, 0.16);
+}
+
+.firms-item:last-child {
+  margin: 0 auto;
 }
