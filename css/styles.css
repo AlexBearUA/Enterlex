@@ -29,7 +29,15 @@ img {
 }
 
 .section {
-  padding: 50px 0;
+  padding: 40px 0;
+  border-bottom: 1px dashed #125388;
+}
+
+.section-header {
+  width: 200px;
+  margin: 0 auto 50px auto;
+  color: #125388;
+  text-align: center;
 }
 
 .visually-hidden {
@@ -78,7 +86,8 @@ img {
 .contact-us {
   background-color: #004aad;
   border: 2px solid white;
-  transition: border-color linear 300ms, color linear 300ms;
+  border-radius: 20px;
+  transition: border-color linear 300ms, color linear 300ms, background-color linear 300ms;
 }
 
 .nav-link:hover {
@@ -87,6 +96,7 @@ img {
 
 .contact-us:hover {
   border: 2px solid #ca6d2e;
+  background-color: #125388;
 }
 
 .smartphone-icon {
@@ -135,4 +145,72 @@ img {
   background-color: #ca6d2e;
   width: 525px;
   height: 655x;
+}
+
+/* About company */
+
+.about-company-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-company-list {
+  width: 520px;
+  color: #125388;
+  font-size: 16px;
+}
+
+.about-company-item:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+/* Services */
+
+.services {
+  text-align: center;
+  list-style: none;
+  color: #125388;
+}
+
+.services-item:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.service-header {
+  margin-bottom: 15px;
+}
+
+.consultation {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.consultation-item {
+  width: 525px;
+}
+
+.consultation-header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.consultation-text {
+  text-align: left;
+}
+
+.ask-consult {
+  display: inline-block;
+  color: white;
+  background-color: #004aad;
+  padding: 15px 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color linear 300ms, background-color linear 300ms;
+}
+
+.ask-consult:hover {
+  color: #ca6d2e;
+  background-color: #125388;
 }
