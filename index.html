@@ -23,13 +23,13 @@
           /></a>
           <ul class="site-nav">
             <li>
-              <a href="" class="nav-link">О компании</a>
+              <a href="#about-company" class="nav-link">О компании</a>
             </li>
             <li>
-              <a href="" class="nav-link">Наши услуги</a>
+              <a href="#our-services" class="nav-link">Наши услуги</a>
             </li>
-            <li><a href="" class="nav-link">Партнёрство</a></li>
-            <li><a href="" class="nav-link">Контакты</a></li>
+            <li><a href="#partnership" class="nav-link">Партнёрство</a></li>
+            <li><a href="#contakts" class="nav-link">Контакты</a></li>
 
             <li>
               <a class="nav-link" href="tel:+380961111111">
@@ -44,9 +44,10 @@
         </nav>
       </div>
     </header>
-    <main>
-      <!-- Hero section -->
 
+    <!-- Hero section -->
+
+    <main>
       <section class="section">
         <div class="container">
           <div class="hero-content">
@@ -121,9 +122,11 @@
         </div>
       </section>
 
+      <!-- О компании -->
+
       <section class="section">
         <div class="container">
-          <h2 class="section-header">О компании</h2>
+          <h2 id="about-company" class="section-header">О компании</h2>
           <div class="about-company-content">
             <img src="./images/about_company.jpg" alt="наша компанія" width="525" />
 
@@ -151,12 +154,14 @@
         </div>
       </section>
 
+      <!-- Наши усуги -->
+
       <section class="section">
         <div class="container">
-          <h2 class="section-header">Наши услуги</h2>
+          <h2 id="our-services" class="section-header">Наши услуги</h2>
           <ul class="services">
             <li class="services-item">
-              <h3 class="service-header">Консультация</h3>
+              <h3 class="service-header" id="consults">Консультация</h3>
               <ul class="consultation">
                 <li class="consultation-item">
                   <h4 class="service-subheader">Почему нужна консультация?</h4>
@@ -179,7 +184,9 @@
               <a href="" class="ask-consult">Связаться с нами</a>
             </li>
             <li class="services-item">
-              <h3 class="service-header">Услуги для индивидуальных клиентов</h3>
+              <h3 class="service-header" id="individual-clients">
+                Услуги для индивидуальных клиентов
+              </h3>
               <ul class="individual-list">
                 <li class="individual-item">
                   <h4 class="service-subheader service-subheader-position">
@@ -217,56 +224,269 @@
                   </h4>
                   <img src="./images/documents.jpg" alt="документи" />
                   <p class="individual-text">
-                    Если Вы долго ждете решения по получению ВНЖ или пластика (карту побыта) мы
-                    поможем укрорить получение этих документов.
+                    Водительские права, регистрация брака, оформление пособий 800+, налоговые
+                    справки, оформление PESEL и др.
                   </p>
                 </li>
               </ul>
             </li>
             <li class="services-item">
-              <h3 class="service-header">Услуги для юридических лиц</h3>
+              <h3 class="service-header" id="corp-clients">Услуги для юридических лиц</h3>
+              <p class="services-tagline">
+                Мы предоставляем услуги по открытию фирм под ключ в Польше с полным кадровым и
+                бухгалтерским сопровождением.
+              </p>
               <ul class="firms-list">
                 <li class="firms-item">
                   <h4 class="service-subheader service-subheader-position">Открытие Sp. z O.O.</h4>
                   <img class="firms-img" src="/images/firm_opening.jpg" alt="відкриття фірми" />
-                  <p class="individual-text">
-                    Мы предоставляем услуги по открытию фирм под ключ в Польше с полным кадровым и
-                    бухгалтерским сопровождением. • Spółka z ograniczoną odpowiedzialnością (ООО)
-                    Что входит в наши услуги: 1. Консультация (определение видов деятельности) 2.
-                    Открытие компании под ключ 3. Регистрация в судовом реестре 4. Помощь в открытии
-                    банковского счета Дополнительная услуга: Получение ВНЖ на основании ведения
-                    бизнеса
-                  </p>
+                  <div class="individual-text">
+                    <p class="firms-services-name">
+                      Spółka z ograniczoną odpowiedzialnością (ООО).
+                    </p>
+                    <p>Что входит в наши услуги:</p>
+
+                    <ol>
+                      <li>Консультация (определение видов деятельности)</li>
+                      <li>Открытие компании под ключ</li>
+                      <li>Регистрация в судовом реестре</li>
+                      <li>Помощь в открытии банковского счета</li>
+                    </ol>
+                    <p>Дополнительная услуга: Получение ВНЖ на основании ведения бизнеса</p>
+                  </div>
                 </li>
                 <li class="firms-item">
                   <h4 class="service-subheader service-subheader-position">Открытие ИП</h4>
                   <img class="firms-img" src="/images/private.jpg" alt="відкриття фірми" />
-                  <p class="individual-text">
-                    • CEIDG (ИП) Что входит в наши услуги: 1. Консультация 2. Регистрация в CEIDG.
-                    3.Помощь в открытии банковского счета 4. Легализация на основании ведения ИП
-                    Дополнительная услуга: Получение ВНЖ на основании ведения бизнеса
-                  </p>
+
+                  <div class="individual-text">
+                    <p class="firms-services-name">CEIDG (ИП).</p>
+                    <p>Что входит в наши услуги:</p>
+
+                    <ol>
+                      <li>Консультация</li>
+                      <li>Регистрация в CEIDG</li>
+                      <li>Помощь в открытии банковского счета</li>
+                      <li>Легализация на основании ведения ИП</li>
+                    </ol>
+                    <p>Дополнительная услуга: Получение ВНЖ на основании ведения бизнеса</p>
+                  </div>
                 </li>
                 <li class="firms-item">
                   <h4 class="service-subheader service-subheader-position">
                     Бухгалтерское и кадровое сопровождение фирмы
                   </h4>
                   <img class="firms-img" src="/images/accounting.jpg" alt="відкриття фірми" />
-                  <p class="individual-text">
-                    1.Подготовка/перевод вопросов для налогового консультанта; 2. Помощь с
-                    банкингом, обучение пользованию сервисом и объяснение особенностей банкинга в
-                    Польше; 3. Ежемесячная отправка налоговых и ЗУС деклараций; 4. Подготовка
-                    трудовых договоров для работников; 5. Ведение кадровой документации; 6.
-                    Легализация работников, получение разрешений на работу; 7. Регистрация
-                    плательщика VAT/ VAT UE
-                  </p>
+
+                  <div class="individual-text">
+                    <p class="firms-services-name">Бухгалтерский учет.</p>
+                    <p>Что входит в наши услуги:</p>
+
+                    <ol>
+                      <li>Подготовка/перевод вопросов для налогового консультанта</li>
+                      <li>
+                        Помощь с банкингом, обучение пользованию сервисом и объяснение особенностей
+                        банкинга в Польше
+                      </li>
+                      <li>Ежемесячная отправка налоговых и ЗУС деклараций</li>
+                      <li>Подготовка трудовых договоров для работников</li>
+                      <li>Ведение кадровой документации</li>
+                      <li>Легализация работников, получение разрешений на работу</li>
+                      <li>Регистрация плательщика VAT/VAT UE</li>
+                    </ol>
+                  </div>
                 </li>
               </ul>
             </li>
           </ul>
         </div>
       </section>
+
+      <!-- Партнерство -->
+
+      <section class="section">
+        <div class="container">
+          <h2 id="partnership" class="section-header">Партнёрство</h2>
+          <div class="about-company-content">
+            <img src="./images/partnership.jpg" alt="партнерство" width="525" />
+
+            <ul class="about-company-list">
+              <li class="about-company-item">
+                Наша компания является командой единомышленников, которые создают сервис,
+                позволяющий сделать более комфортными первые шаги адаптации и легализации человека,
+                решившего связать своё будущее с Польшей.
+              </li>
+              <li class="about-company-item">
+                Нами постоянно ведётся работа по улучшению качества и расширению количества
+                оказываемых услуг.
+              </li>
+              <li class="about-company-item">
+                Мы постоянно ищем партнёров, которые были бы заинтересованы в сотрудничестве рамках
+                реализации и развития данного проекта.
+              </li>
+              <li class="about-company-item">
+                Если у Вас есть интересные идеи, опыт, которым Вы могли бы поделиться или
+                предложение по сотрудничеству, с целью развития данного сервиса – мы будем рады
+                встрече с Вами!
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Контакти -->
+
+      <section class="section">
+        <div class="container">
+          <h2 id="contakts" class="section-header">Контакты</h2>
+
+          <div class="contacts">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.405243383793!2d21.0112526!3d52.2360226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc8ac7ef9501%3A0xebfbd11e29f41806!2s%C5%9Awi%C4%99tokrzyska%2018%2C%2000-052%20Warszawa!5e0!3m2!1sru!2spl!4v1710061576973!5m2!1sru!2spl"
+              class="location"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <div class="contacts-content">
+              <p class="contacts-text">
+                Мы всегда на связи! Все вопросы вы можете задать по телефону или в удобном для Вас
+                мессенджере или написать нам на e-mail. Ответим максимально оперативно!
+              </p>
+              <ul class="contacts-list">
+                <li>
+                  <p class="contact-adres">
+                    <svg class="contact-icon">
+                      <use href="./images/icons.svg#icon-office"></use>
+                    </svg>
+                    Świętokrzyska 18, 00-052 Warszawa
+                  </p>
+                </li>
+                <li>
+                  <a class="contact-link" href="tel:+380961111111">
+                    <svg class="contact-icon">
+                      <use href="./images/icons.svg#icon-mobile"></use>
+                    </svg>
+                    +48 788 534 088</a
+                  >
+                </li>
+                <li>
+                  <a class="contact-link" href="mailto:biuroenterlex@gmail.com">
+                    <svg class="contact-icon">
+                      <use href="./images/icons.svg#icon-mail4"></use>
+                    </svg>
+                    biuroenterlex@gmail.com
+                  </a>
+                </li>
+              </ul>
+              <div>
+                <p>Мы на связи в мессенджерах:</p>
+                <ul class="soc-networks">
+                  <a href="https://t.me/Anna_Enterlex" class="soc-link">
+                    <svg class="soc-icon">
+                      <use href="./images/icons.svg#icon-telegram"></use>
+                    </svg>
+                  </a>
+                  <a href="viber://chat?number=%2B48788534088" class="soc-link">
+                    <svg class="soc-icon">
+                      <use href="./images/icons.svg#icon-viber"></use>
+                    </svg>
+                  </a>
+                  <a href="https://wa.me/+48788534088" class="soc-link">
+                    <svg class="soc-icon">
+                      <use href="./images/icons.svg#icon-whatsapp"></use>
+                    </svg>
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- Footer -->
+
+    <footer class="footer-background">
+      <div class="container">
+        <div class="footer">
+          <div class="footer-section">
+            <p class="footer-header">НАШИ УСЛУГИ</p>
+            <ul class="footer-links">
+              <li><a href="#consults" class="footer-link" href="">Консультация</a></li>
+              <li><a class="footer-link" href="#individual-clients">Индивидуальным клиентам</a></li>
+              <li><a class="footer-link" href="#corp-clients">Юридическим лицам</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <p class="footer-header">КОНТАКТЫ</p>
+            <ul class="contacts-list-footer">
+              <li>
+                <p class="contact-adres-footer">
+                  <svg class="contact-icon">
+                    <use href="./images/icons.svg#icon-office"></use>
+                  </svg>
+                  Świętokrzyska 18, Warszawa
+                </p>
+              </li>
+              <li>
+                <a class="contact-link-footer" href="tel:+380961111111">
+                  <svg class="contact-icon">
+                    <use href="./images/icons.svg#icon-mobile"></use>
+                  </svg>
+                  +48 788 534 088</a
+                >
+              </li>
+              <li>
+                <a class="contact-link-footer" href="mailto:biuroenterlex@gmail.com">
+                  <svg class="contact-icon">
+                    <use href="./images/icons.svg#icon-mail4"></use>
+                  </svg>
+                  biuroenterlex@gmail.com
+                </a>
+              </li>
+            </ul>
+
+            <ul class="soc-networks-footer">
+              <a href="https://t.me/Anna_Enterlex" class="soc-link-footer">
+                <svg class="soc-icon-footer">
+                  <use href="./images/icons.svg#icon-telegram"></use>
+                </svg>
+              </a>
+              <a href="viber://chat?number=%2B48788534088" class="soc-link-footer">
+                <svg class="soc-icon-footer">
+                  <use href="./images/icons.svg#icon-viber"></use>
+                </svg>
+              </a>
+              <a href="https://wa.me/+48788534088" class="soc-link-footer">
+                <svg class="soc-icon-footer">
+                  <use href="./images/icons.svg#icon-whatsapp"></use>
+                </svg>
+              </a>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <p class="footer-header">МЫ В СОЦСЕТЯХ</p>
+            <p class="social-text">
+              Все самое интересное о наших услугах, интересных фактах о компании и другую полезную
+              информацию вы можете найти на страничках наших социальных сетей. Присоединяйтесь и
+              следите за нашими новостями!
+            </p>
+            <a href="" class="soc-link-footer">
+              <svg class="soc-icon-footer">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="footer-section">
+            <p class="footer-header">ДРУГОЕ</p>
+
+            <a href="" class="policy-link">Обработка персональных данных</a>
+            <a href="" class="policy-link">Регламент сайта</a>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/modal.js"></script>
