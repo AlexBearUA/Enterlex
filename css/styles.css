@@ -24,9 +24,26 @@ img {
 }
 
 .container {
-  width: 1200px;
   margin: 0 auto;
-  padding: 0 25px;
+  padding: 0 15px;
+
+  @media screen and (max-width: 479px) {
+    max-width: 479px;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding: 0 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding: 0 25px;
+  }
 }
 
 .section {
@@ -83,24 +100,48 @@ img {
   top: 0;
   z-index: 99;
   width: 100%;
-  padding: 25px 0;
+  padding: 15px 0;
   background-color: #125388;
   border-bottom: 1px solid white;
 }
 
 .nav {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
-  margin-right: 75px;
+  width: 110px;
+
+  @media screen and (min-width: 400px) {
+    width: 150px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 175px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 75px;
+  }
 }
 .site-nav {
   display: flex;
-  width: 100%;
   justify-content: space-between;
+
   align-items: center;
   list-style: none;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+  @media (max-width: 1199px) {
+    width: 400px;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    justify-content: space-around;
+  }
 }
 
 .nav-link {
@@ -111,11 +152,49 @@ img {
   transition: color linear 300ms;
 }
 
+.tel-link-mobile {
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 12px;
+  transition: color linear 300ms;
+  display: inline-block;
+
+  @media screen and (min-width: 400px) {
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.tel-link-mobile:hover {
+  color: #ca6d2e;
+}
+
 .contact-us {
-  background-color: #004aad;
+  width: 130px;
+  display: block;
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  background-color: #ca6d2e;
   border: 2px solid white;
   border-radius: 20px;
   transition: border-color linear 300ms, color linear 300ms, background-color linear 300ms;
+
+  @media screen and (min-width: 400px) {
+    font-size: 16px;
+    width: 160px;
+    padding: 10px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 25px;
+  }
 }
 
 .nav-link:hover {
@@ -134,21 +213,65 @@ img {
   margin-right: 5px;
 }
 
+.mobile-menu-button {
+  margin-bottom: 30px;
+  border: 2px solid white;
+  fill: white;
+  background-color: #004aad;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: fill linear 300ms, border linear 300ms;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mobile-menu-icon {
+  width: 25px;
+  height: 30px;
+  @media (max-width: 399px) {
+    width: 15px;
+    height: 20px;
+  }
+}
+
+.mobile-menu-button:hover {
+  fill: #ca6d2e;
+  border: 2px solid #ca6d2e;
+}
+
 /* HERO */
 
 .hero-content {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  row-gap: 20px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .services-slider {
-  width: 525px;
+  width: 450px;
   overflow: hidden;
   margin-bottom: 25px;
-
   background-color: #125388;
   border: 1px solid #004aad;
   border-radius: 10px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 350px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 560px;
+  }
 }
 
 .slider-content-list {
@@ -171,8 +294,27 @@ img {
 
 .right-section {
   background-color: #ca6d2e;
-  width: 525px;
-  height: 655x;
+  width: 450px;
+  height: 500px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 350px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 560px;
+  }
+}
+
+.company-boss {
+  width: 450px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 350px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 560px;
+  }
 }
 
 /* About company */
@@ -435,7 +577,6 @@ img {
   color: white;
   display: flex;
   align-items: center;
-  /* font-weight: bold; */
 }
 
 .contact-link-footer {
@@ -562,4 +703,105 @@ img {
 
 .policy-text {
   color: white;
+}
+
+/* Mobile menu  */
+
+.mobile-menu-container {
+  position: fixed;
+  padding: 48px 40px;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #125388;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+
+  &.is-open {
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.mobile-menu__button-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: white;
+  color: black;
+  transition: color linear 300ms;
+  &:hover,
+  &:focus {
+    color: #ca6d2e;
+  }
+}
+
+.mobile-menu__icon-close {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.logo-mobile {
+  display: block;
+  width: 250px;
+  margin-bottom: 25px;
+}
+
+.mobile-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.mobile-link {
+  text-decoration: none;
+  color: white;
+}
+
+.mobile-link:hover {
+  color: #ca6d2e;
+}
+.mobile-tel-icon {
+  width: 15px;
+  height: 15px;
+  fill: currentColor;
+}
+
+.contact-us-mobile {
+  width: 160px;
+  display: block;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  background-color: #ca6d2e;
+  border: 2px solid white;
+  border-radius: 20px;
+  transition: border-color linear 300ms, color linear 300ms, background-color linear 300ms;
+}
+
+.contact-us-mobile:hover {
+  border: 2px solid #ca6d2e;
+  background-color: #125388;
 }

@@ -19,7 +19,7 @@
       <div class="container">
         <nav class="nav">
           <a href="./index.html" class="logo"
-            ><img src="./images/logo.jpg" alt="лого компанії" width="175"
+            ><img src="./images/logo.jpg" alt="лого компанії"
           /></a>
           <ul class="site-nav">
             <li>
@@ -39,15 +39,32 @@
                 +48 788 534 088
               </a>
             </li>
-            <li><a href="" class="nav-link contact-us">Связаться с нами</a></li>
           </ul>
+          <div>
+            <a href="" class="contact-us">Связаться с нами</a>
+
+            <a class="tel-link-mobile" href="tel:+380961111111">
+              <svg class="smartphone-icon">
+                <use href="./images/icons.svg#smartphone"></use>
+              </svg>
+              +48 788 534 088
+            </a>
+          </div>
+          <button
+            class="mobile-menu-button js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="mobile-menu-icon">
+              <use href="./images/icons.svg#burger-menu"></use>
+            </svg>
+          </button>
         </nav>
       </div>
     </header>
 
-    <!-- Hero section -->
-
     <main>
+      <!-- Hero section -->
       <section class="section">
         <div class="container">
           <div class="hero-content">
@@ -114,7 +131,7 @@
                   </div>
                 </div>
               </div>
-              <img src="./images/boss.jpg" alt="босс компанії" width="525" />
+              <img src="./images/boss.jpg" alt="босс компанії" class="company-boss" />
             </div>
 
             <div class="right-section"></div>
@@ -124,7 +141,7 @@
 
       <!-- О компании -->
 
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 id="about-company" class="section-header">О компании</h2>
           <div class="about-company-content">
@@ -152,11 +169,11 @@
             </ul>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Наши усуги -->
 
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 id="our-services" class="section-header">Наши услуги</h2>
           <ul class="services">
@@ -300,11 +317,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Партнерство -->
 
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 id="partnership" class="section-header">Партнёрство</h2>
           <div class="about-company-content">
@@ -332,11 +349,11 @@
             </ul>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Контакти -->
 
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 id="contakts" class="section-header">Контакты</h2>
 
@@ -402,12 +419,12 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <!-- Footer -->
 
-    <footer class="footer-background">
+    <!-- <footer class="footer-background">
       <div class="container">
         <div class="footer">
           <div class="footer-section">
@@ -495,7 +512,7 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- Backdrop -->
 
@@ -553,8 +570,63 @@
       </div>
     </div>
 
+    <!-- Mobile menu -->
+
+    <div class="mobile-menu-container js-menu-container" id="mobile-menu">
+      <button class="mobile-menu__button-close js-close-menu">
+        <svg class="mobile-menu__icon-close">
+          <use href="./images/icons.svg#close-backdrop"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu">
+        <a href="./index.html" class="logo-mobile"
+          ><img src="./images/logo.jpg" alt="лого компанії"
+        /></a>
+        <ul class="mobile-nav">
+          <li>
+            <a href="#about-company" class="mobile-link">О компании</a>
+          </li>
+          <li>
+            <a href="#our-services" class="mobile-link">Наши услуги</a>
+          </li>
+          <li><a href="#partnership" class="mobile-link">Партнёрство</a></li>
+          <li><a href="#contakts" class="mobile-link">Контакты</a></li>
+
+          <li>
+            <a class="mobile-link" href="tel:+380961111111">
+              <svg class="mobile-tel-icon">
+                <use href="./images/icons.svg#smartphone"></use>
+              </svg>
+              +48 788 534 088
+            </a>
+          </li>
+        </ul>
+
+        <a href="" class="contact-us-mobile">Связаться с нами</a>
+
+        <ul class="soc-networks-footer">
+          <a href="https://t.me/Anna_Enterlex" class="soc-link-footer">
+            <svg class="soc-icon-footer">
+              <use href="./images/icons.svg#icon-telegram"></use>
+            </svg>
+          </a>
+          <a href="viber://chat?number=%2B48788534088" class="soc-link-footer">
+            <svg class="soc-icon-footer">
+              <use href="./images/icons.svg#icon-viber"></use>
+            </svg>
+          </a>
+          <a href="https://wa.me/+48788534088" class="soc-link-footer">
+            <svg class="soc-icon-footer">
+              <use href="./images/icons.svg#icon-whatsapp"></use>
+            </svg>
+          </a>
+        </ul>
+      </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
