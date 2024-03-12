@@ -25,7 +25,7 @@ img {
 
 .container {
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 10px;
 
   @media screen and (max-width: 479px) {
     max-width: 479px;
@@ -258,7 +258,7 @@ img {
 }
 
 .services-slider {
-  width: 450px;
+  min-width: 300px;
   overflow: hidden;
   margin-bottom: 25px;
   background-color: #125388;
@@ -294,7 +294,7 @@ img {
 
 .right-section {
   background-color: #ca6d2e;
-  width: 450px;
+  min-width: 300px;
   height: 500px;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -307,7 +307,7 @@ img {
 }
 
 .company-boss {
-  width: 450px;
+  min-width: 300px;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 350px;
