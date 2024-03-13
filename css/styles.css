@@ -778,12 +778,14 @@ img {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  margin-bottom: 15px;
+  gap: 25px;
+  margin-bottom: 25px;
 }
 .mobile-link {
   text-decoration: none;
   color: white;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .mobile-link:hover {
