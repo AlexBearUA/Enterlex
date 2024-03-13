@@ -702,7 +702,7 @@ img {
 .modal {
   position: absolute;
   width: 310px;
-  top: 160%;
+  top: 280%;
   left: 50%;
 
   transform: translate(-50%, -50%) scale(1);
@@ -721,25 +721,25 @@ img {
 
   @media screen and (min-width: 420px) and (max-width: 549px) {
     width: 400px;
-    top: 115%;
+    top: 210%;
     left: 50%;
   }
 
   @media screen and (min-width: 550px) and (max-width: 767px) {
     width: 540px;
-    top: 85%;
+    top: 150%;
     left: 50%;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 750px;
-    top: 60%;
+    top: 115%;
     left: 50%;
   }
 
   @media screen and (min-width: 1200px) {
     width: 1000px;
-    top: 50%;
+    top: 85%;
     left: 50%;
   }
 }
