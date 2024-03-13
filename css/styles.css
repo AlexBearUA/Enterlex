@@ -427,7 +427,7 @@ img {
 .service-subheader {
   text-align: center;
   padding: 15px;
-  background-color: #125388;
+  background-color: rgba(18, 83, 136, 0.7);
   color: white;
   width: 100%;
 }
@@ -504,16 +504,21 @@ img {
 }
 .firms-item {
   position: relative;
-  width: 525px;
+  width: 100%;
   border: 1px solid #125388;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   box-shadow: 0px 1px 1px rgba(18, 83, 136, 0.12), 0px 4px 4px rgba(18, 83, 136, 0.06),
     1px 4px 6px rgba(18, 83, 136, 0.16);
+
+  @media screen and (min-width: 768px) {
+    width: 48%;
+  }
 }
 
 .firms-services-name {
   font-weight: bold;
+  text-align: left;
 }
 
 /* Контакти  */
