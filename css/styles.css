@@ -2,10 +2,10 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  padding-top: 70px;
+  padding-top: 90px;
 
   @media screen and (min-width: 400px) and (max-width: 767px) {
-    padding-top: 90px;
+    padding-top: 105px;
   }
 
   @media screen and (min-width: 768px) {
@@ -55,7 +55,11 @@ img {
 }
 
 .section {
-  padding: 40px 0;
+  padding: 20px 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 40px 0;
+  }
 }
 
 .section:not(:last-child) {
@@ -64,9 +68,13 @@ img {
 
 .section-header {
   width: 200px;
-  margin: 0 auto 50px auto;
+  margin: 0 auto 20px auto;
   color: #004aad;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    margin: 0 auto 50px auto;
+  }
 }
 
 .visually-hidden {
@@ -329,13 +337,44 @@ img {
 
 .about-company-content {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.about-company-img {
+  min-width: 300px;
+  object-fit: cover;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 350px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 525px;
+  }
 }
 
 .about-company-list {
-  width: 520px;
+  min-width: 295px;
   color: #125388;
   font-size: 16px;
+  border: 1px solid #125388;
+  box-shadow: 0px 1px 1px rgba(18, 83, 136, 0.12), 0px 4px 4px rgba(18, 83, 136, 0.06),
+    1px 4px 6px rgba(18, 83, 136, 0.16);
+  border-radius: 5px;
+  padding: 15px 5px 15px 25px;
+
+  @media screen and (max-width: 767px) and (max-width: 1199px) {
+    margin-top: 15px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 345px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 520px;
+  }
 }
 
 .about-company-item:not(:last-child) {
@@ -453,9 +492,9 @@ img {
     1px 4px 6px rgba(18, 83, 136, 0.16);
 }
 
-.firms-item:last-child {
+/* .firms-item:last-child {
   margin: 0 auto;
-}
+} */
 
 .firms-services-name {
   font-weight: bold;
