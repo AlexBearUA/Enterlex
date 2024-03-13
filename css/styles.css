@@ -73,7 +73,7 @@ img {
   text-align: center;
 
   @media screen and (min-width: 768px) {
-    margin: 0 auto 50px auto;
+    margin: 0 auto 30px auto;
   }
 }
 
@@ -200,7 +200,7 @@ img {
   background-color: #ca6d2e;
   border: 2px solid white;
   border-radius: 20px;
-  transition: border-color linear 300ms, color linear 300ms, background-color linear 300ms;
+  transition: border-color linear 300ms, background-color linear 300ms;
 
   @media screen and (min-width: 400px) {
     font-size: 16px;
@@ -400,17 +400,28 @@ img {
 .consultation {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  row-gap: 20px;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .consultation-item {
-  width: 525px;
+  width: 100%;
+
   border: 1px solid #125388;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   box-shadow: 0px 1px 1px rgba(18, 83, 136, 0.12), 0px 4px 4px rgba(18, 83, 136, 0.06),
     1px 4px 6px rgba(18, 83, 136, 0.16);
+
+  @media screen and (min-width: 768px) {
+    width: 48%;
+  }
 }
 
 .service-subheader {
@@ -433,17 +444,18 @@ img {
 .ask-consult {
   display: inline-block;
   color: white;
-  background-color: #004aad;
+  background-color: #ca6d2e;
+  border: 2px solid white;
   padding: 15px 10px;
   border-radius: 20px;
   text-decoration: none;
   font-size: 18px;
-  transition: color linear 300ms, background-color linear 300ms;
+  transition: border linear 300ms, background-color linear 300ms;
 }
 
 .ask-consult:hover {
-  color: #ca6d2e;
   background-color: #125388;
+  border: 2px solid #ca6d2e;
 }
 
 .individual-list {
@@ -456,12 +468,20 @@ img {
 
 .individual-item {
   position: relative;
-  width: 30%;
+  width: 100%;
   border: 1px solid #125388;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   box-shadow: 0px 1px 1px rgba(18, 83, 136, 0.12), 0px 4px 4px rgba(18, 83, 136, 0.06),
     1px 4px 6px rgba(18, 83, 136, 0.16);
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 48%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 30%;
+  }
 }
 
 .individual-text {
@@ -491,10 +511,6 @@ img {
   box-shadow: 0px 1px 1px rgba(18, 83, 136, 0.12), 0px 4px 4px rgba(18, 83, 136, 0.06),
     1px 4px 6px rgba(18, 83, 136, 0.16);
 }
-
-/* .firms-item:last-child {
-  margin: 0 auto;
-} */
 
 .firms-services-name {
   font-weight: bold;
