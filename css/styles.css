@@ -34,22 +34,13 @@ img {
 .container {
   margin: 0 auto;
   padding: 0 10px;
-
-  @media screen and (max-width: 479px) {
-    max-width: 479px;
-  }
-
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
+  max-width: 1200px;
 
   @media screen and (min-width: 768px) {
-    width: 768px;
     padding: 0 20px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 1200px;
     padding: 0 25px;
   }
 }
@@ -273,6 +264,21 @@ img {
   }
 }
 
+.left-section {
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: 48%;
+  }
+}
+
+.right-section {
+  background-color: #ca6d2e;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: 48%;
+  }
+}
+
 .services-slider {
   min-width: 300px;
   overflow: hidden;
@@ -280,14 +286,6 @@ img {
   background-color: #125388;
   border: 1px solid #004aad;
   border-radius: 10px;
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 350px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 560px;
-  }
 }
 
 .slider-content-list {
@@ -308,29 +306,8 @@ img {
   font-size: 15px;
 }
 
-.right-section {
-  background-color: #ca6d2e;
-  min-width: 300px;
-  height: 500px;
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 350px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 560px;
-  }
-}
-
 .company-boss {
-  min-width: 300px;
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 350px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 560px;
-  }
+  width: 100%;
 }
 
 /* About company */
@@ -348,11 +325,8 @@ img {
 .about-company-img {
   min-width: 300px;
   object-fit: cover;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 350px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 525px;
+  @media screen and (min-width: 768px) {
+    width: 48%;
   }
 }
 
@@ -366,14 +340,11 @@ img {
   border-radius: 5px;
   padding: 15px 5px 15px 25px;
 
-  @media screen and (max-width: 767px) and (max-width: 1199px) {
+  @media screen and (max-width: 767px) {
     margin-top: 15px;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 345px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 520px;
+  @media screen and (min-width: 768px) {
+    width: 48%;
   }
 }
 
