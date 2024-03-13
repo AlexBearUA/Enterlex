@@ -81,23 +81,14 @@ img {
   margin: -1px;
 }
 
-#about-company:before,
-#our-services:before,
-#partnership:before,
-#contakts:before {
-  display: block;
-  content: '';
-  height: 145px;
-  margin: -145px 0 0;
-}
+.anchor {
+  position: relative;
 
-#consults:before,
-#individual-clients:before,
-#corp-clients:before {
-  display: block;
-  content: '';
-  height: 145px;
-  margin: -145px 0 0;
+  top: -110px;
+
+  @media screen and (min-width: 850px) {
+    top: -140px;
+  }
 }
 
 /* Header */
@@ -144,7 +135,6 @@ img {
   }
 
   @media (max-width: 1199px) {
-    width: 400px;
     flex-wrap: wrap;
     row-gap: 15px;
     justify-content: space-around;
@@ -199,7 +189,7 @@ img {
     padding: 10px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1021px) {
     margin-bottom: 25px;
   }
 }
@@ -710,14 +700,14 @@ img {
 }
 
 .modal {
-  max-width: 1200px;
-
   position: absolute;
-  top: 50%;
+  width: 310px;
+  top: 160%;
   left: 50%;
+
   transform: translate(-50%, -50%) scale(1);
 
-  padding: 20px;
+  padding: 40px 20px 20px 20px;
 
   background-color: #125388;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -727,6 +717,30 @@ img {
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0.9);
     transition: transform linear 300ms;
+  }
+
+  @media screen and (min-width: 420px) and (max-width: 549px) {
+    width: 400px;
+    top: 115%;
+    left: 50%;
+  }
+
+  @media screen and (min-width: 550px) and (max-width: 767px) {
+    width: 540px;
+    top: 85%;
+    left: 50%;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 750px;
+    top: 60%;
+    left: 50%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1000px;
+    top: 50%;
+    left: 50%;
   }
 }
 
@@ -757,6 +771,21 @@ img {
   width: 18px;
   height: 18px;
   fill: currentColor;
+}
+
+.close-button-down {
+  display: block;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 15px;
+  padding: 5px 10px;
+  margin: 10px auto 0 auto;
+  transition: color linear 300ms;
+}
+
+.close-button-down:hover {
+  color: #ca6d2e;
 }
 
 .policy-text {

@@ -2,11 +2,13 @@
   const refs = {
     openModalBtn: document.querySelector('[data-modal-open]'),
     closeModalBtn: document.querySelector('[data-modal-close]'),
+    closeModalBtnDown: document.querySelector('[data-modal-close-down]'),
     backdrop: document.querySelector('[data-modal]'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtnDown.addEventListener('click', toggleModal);
   refs.backdrop.addEventListener('click', onBackdropClick);
   window.addEventListener('keydown', onEscKeyPress);
 
