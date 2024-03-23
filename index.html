@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
     <title>Enterlex</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link
@@ -137,7 +138,7 @@
             <div class="right-section">
               <div class="form">
                 <form action="#" id="form" class="form__body">
-                  <h3 class="form__title">Оставте вашу заявку</h3>
+                  <h3 class="contact-form-title">Оставить заявку</h3>
                   <div class="form__item">
                     <label for="formName" class="form__label">Имя*:</label>
                     <input id="formName" type="text" name="name" class="form__input _req" />
@@ -178,13 +179,45 @@
                       <label for="formAgreement" class="checkbox__label"
                         ><span
                           >Я даю свое согласие на обработку персональных данных в соответствии с
-                          <a href="">Условиями</a>*</span
+                          <button type="button" class="policy-link" data-modal-open-one>
+                            Условиями</button
+                          >*</span
                         ></label
                       >
                     </div>
                   </div>
-                  <button type="submit" class="form__button">Отправить</button>
+                  <button type="submit" class="form__button">Отправить заявку</button>
                 </form>
+              </div>
+              <div>
+                <h3 class="contact-form-title">Связаться с нами в мессенджерах</h3>
+                <ul class="soc-networks">
+                  <a href="https://t.me/Anna_Enterlex" class="soc-link">
+                    <svg class="soc-icon">
+                      <use href="./images/icons.svg#icon-telegram"></use>
+                    </svg>
+                  </a>
+                  <a href="viber://chat?number=%2B48788534088" class="soc-link">
+                    <svg class="soc-icon">
+                      <use href="./images/icons.svg#icon-viber"></use>
+                    </svg>
+                  </a>
+                  <a href="https://wa.me/+48788534088" class="soc-link">
+                    <svg class="soc-icon">
+                      <use href="./images/icons.svg#icon-whatsapp"></use>
+                    </svg>
+                  </a>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="contact-form-title">Посетить наш офис</h3>
+                <p class="contact-form-adres">
+                  <svg class="contact-icon">
+                    <use href="./images/icons.svg#icon-office"></use>
+                  </svg>
+                  Świętokrzyska 18, 00-052 Warszawa
+                </p>
               </div>
             </div>
           </div>
@@ -614,10 +647,9 @@
           <div class="footer-section">
             <p class="footer-header">ДРУГОЕ</p>
 
-            <button type="button" class="policy-link" data-modal-open>
+            <button type="button" class="policy-link" data-modal-open-two>
               Обработка персональных данных
             </button>
-            <button type="button" class="policy-link">Регламент сайта</button>
           </div>
         </div>
       </div>

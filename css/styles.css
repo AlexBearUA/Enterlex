@@ -262,7 +262,12 @@ img {
 }
 
 .right-section {
-  background-color: #ca6d2e;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #125388;
+  border-radius: 10px;
+  padding: 20px;
   width: 100%;
   @media screen and (min-width: 768px) {
     width: 48%;
@@ -298,6 +303,77 @@ img {
 
 .company-boss {
   width: 100%;
+}
+
+/* форма обратной связи  */
+
+.form__body {
+  position: relative;
+
+  color: white;
+}
+
+.form__body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(51, 51, 51, 0.9) url('../images/loading.gif') center / 50px no-repeat;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease 0s;
+}
+
+.form__body._sending::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.form__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.form__input {
+  border: none;
+  width: 100%;
+
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+.form__select {
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+
+.form__button {
+  display: inline-block;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  background-color: #ca6d2e;
+  border: 2px solid white;
+  border-radius: 20px;
+  transition: border-color linear 300ms, background-color linear 300ms;
+}
+
+.form__button:hover {
+  border: 2px solid #ca6d2e;
+  background-color: #125388;
+}
+
+.contact-form-title {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.contact-form-adres {
+  display: flex;
+  align-items: center;
+
+  color: white;
 }
 
 /* About company */
@@ -661,7 +737,7 @@ img {
 }
 
 .policy-link {
-  display: block;
+  display: inline-block;
   cursor: pointer;
   background-color: transparent;
   border: none;
@@ -892,25 +968,4 @@ img {
 .contact-us-mobile:hover {
   border: 2px solid #ca6d2e;
   background-color: #125388;
-}
-
-/* форма обратной связи  */
-.form__body {
-  position: relative;
-}
-.form__body::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(51, 51, 51, 0.9) url('../img/loading.gif') center / 50px no-repeat;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.5s ease 0s;
-}
-.form__body._sending::after {
-  opacity: 1;
-  visibility: visible;
 }
