@@ -134,7 +134,59 @@
               <img src="./images/boss.jpg" alt="босс компанії" class="company-boss" />
             </div>
 
-            <div class="right-section"></div>
+            <div class="right-section">
+              <div class="form">
+                <form action="#" id="form" class="form__body">
+                  <h3 class="form__title">Оставте вашу заявку</h3>
+                  <div class="form__item">
+                    <label for="formName" class="form__label">Имя*:</label>
+                    <input id="formName" type="text" name="name" class="form__input _req" />
+                  </div>
+                  <div class="form__item">
+                    <label for="formEmail" class="form__label">E-mail*:</label>
+                    <input
+                      id="formEmail"
+                      type="text"
+                      name="email"
+                      class="form__input _req _email"
+                    />
+                  </div>
+
+                  <div class="form__item">
+                    <label for="formTel" class="form__label">Телефон*:</label>
+                    <input id="formTel" type="tel" name="tel" class="form__input _req" />
+                  </div>
+
+                  <div class="form__item">
+                    <div class="form__label">Что вас интересует:</div>
+                    <select name="service" class="form__select">
+                      <option value="консультация" selected>Консультация</option>
+                      <option value="карта побыта">Карта побыта</option>
+                      <option value="открытие фирмы">Открытие фирмы</option>
+                    </select>
+                  </div>
+
+                  <div class="form__item">
+                    <div class="checkbox">
+                      <input
+                        id="formAgreement"
+                        checked
+                        type="checkbox"
+                        name="agreement"
+                        class="checkbox__input _req"
+                      />
+                      <label for="formAgreement" class="checkbox__label"
+                        ><span
+                          >Я даю свое согласие на обработку персональных данных в соответствии с
+                          <a href="">Условиями</a>*</span
+                        ></label
+                      >
+                    </div>
+                  </div>
+                  <button type="submit" class="form__button">Отправить</button>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -686,5 +738,6 @@
     <script src="./js/slider.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/form.js"></script>
   </body>
 </html>
