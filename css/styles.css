@@ -338,13 +338,22 @@ img {
 .form__input {
   border: none;
   width: 100%;
-
   padding: 5px 15px;
   border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
+
+.form__input:focus-within {
+  background-color: white;
+}
+.form__input::placeholder {
+  color: rgba(0, 0, 0, 0.9);
+}
+
 .form__select {
   padding: 5px 15px;
   border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .form__button {
@@ -501,6 +510,7 @@ img {
   flex-wrap: wrap;
   row-gap: 25px;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .individual-item {
@@ -533,6 +543,7 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 30px;
+  margin-bottom: 20px;
 }
 
 .services-tagline {
@@ -631,8 +642,8 @@ img {
 }
 
 .soc-icon {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   transition: transform linear 300ms;
 }
 

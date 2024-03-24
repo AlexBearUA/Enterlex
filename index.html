@@ -42,7 +42,7 @@
             </li>
           </ul>
           <div>
-            <a href="" class="contact-us">Связаться с нами</a>
+            <a href="#contact-form" class="contact-us">Связаться с нами</a>
 
             <a class="tel-link-mobile" href="tel:+380961111111">
               <svg class="smartphone-icon">
@@ -138,10 +138,17 @@
             <div class="right-section">
               <div class="form">
                 <form action="#" id="form" class="form__body">
+                  <div class="anchor" id="contact-form"></div>
                   <h3 class="contact-form-title">Оставить заявку</h3>
                   <div class="form__item">
                     <label for="formName" class="form__label">Имя*:</label>
-                    <input id="formName" type="text" name="name" class="form__input _req" />
+                    <input
+                      id="formName"
+                      type="text"
+                      name="name"
+                      class="form__input _req"
+                      placeholder="Введите ваше имя"
+                    />
                   </div>
                   <div class="form__item">
                     <label for="formEmail" class="form__label">E-mail*:</label>
@@ -150,12 +157,19 @@
                       type="text"
                       name="email"
                       class="form__input _req _email"
+                      placeholder="example@mail.com"
                     />
                   </div>
 
                   <div class="form__item">
                     <label for="formTel" class="form__label">Телефон*:</label>
-                    <input id="formTel" type="tel" name="tel" class="form__input _req" />
+                    <input
+                      id="formTel"
+                      type="tel"
+                      name="tel"
+                      value="+48 ___-___-___"
+                      class="form__input _req"
+                    />
                   </div>
 
                   <div class="form__item">
@@ -216,7 +230,8 @@
                   <svg class="contact-icon">
                     <use href="./images/icons.svg#icon-office"></use>
                   </svg>
-                  Świętokrzyska 18, 00-052 Warszawa
+                  Świętokrzyska 18, lok. 305 (3 piętro), 00-052 Warszawa<br />
+                  Owarte: Pn. - Pt. 9:00 - 17:00
                 </p>
               </div>
             </div>
@@ -286,7 +301,7 @@
                   </p>
                 </li>
               </ul>
-              <a href="" class="ask-consult">Связаться с нами</a>
+              <a href="#contact-form" class="ask-consult">Связаться с нами</a>
             </li>
             <li class="services-item">
               <div class="anchor" id="individual-clients"></div>
@@ -359,6 +374,7 @@
                   </p>
                 </li>
               </ul>
+              <a href="#contact-form" class="ask-consult">Связаться с нами</a>
             </li>
             <li class="services-item">
               <div class="anchor" id="corp-clients"></div>
@@ -454,6 +470,7 @@
                   </div>
                 </li>
               </ul>
+              <a href="#contact-form" class="ask-consult">Связаться с нами</a>
             </li>
           </ul>
         </div>
@@ -518,7 +535,8 @@
                     <svg class="contact-icon">
                       <use href="./images/icons.svg#icon-office"></use>
                     </svg>
-                    Świętokrzyska 18, 00-052 Warszawa
+                    Świętokrzyska 18, lok. 305 (3 piętro), 00-052 Warszawa<br />
+                    Owarte: Pn. - Pt. 9:00 - 17:00
                   </p>
                 </li>
                 <li>
@@ -771,5 +789,6 @@
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/form.js"></script>
+    <script src="./js/masked-tel-input.js"></script>
   </body>
 </html>
