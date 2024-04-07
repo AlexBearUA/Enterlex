@@ -43,7 +43,7 @@
 	if (!$mail->send()) {
 		$message = 'Ошибка';
 	} else {
-		$message = 'Данные отправлены!';
+		$message = 'Заявка успешно отправлена';
 	}
 
 	$response = ['message' => $message];
